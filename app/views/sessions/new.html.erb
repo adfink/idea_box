@@ -1,0 +1,12 @@
+<h1>login here please</h1>
+
+<%= form_for(:session, url: login_path) do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %><br>
+  <%= f.label :password %>
+  <%= f.text_field :password %><br>
+
+  <%= f.submit "Login" %>
+<% end%>
+
+<p><%= button_to "home", root_path, method: :get %></p>

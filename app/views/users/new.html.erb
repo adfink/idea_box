@@ -1,0 +1,13 @@
+<h1>create a new account please</h1>
+
+<%= form_for(@user) do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %><br>
+  <%= f.label :password %>
+  <%= f.text_field :password %><br>
+
+  <%= f.submit "Create account" %>
+<% end%>
+
+
+<p><%= button_to "home", root_path, method: :get %></p>
