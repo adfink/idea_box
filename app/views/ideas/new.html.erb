@@ -1,0 +1,10 @@
+<h1>congratulations you had an idea. you want a cookie?</h1>
+<p>put your shitty idea here and be done with it. move on with your life</p>
+
+<%= form_for(@idea) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%><br>
+  <%= f.label :description%>
+  <%= f.text_area :description%><br>
+  <%= f.submit "click this button to jettison this idea from your feeble, confused little mind"%>
+<% end %>

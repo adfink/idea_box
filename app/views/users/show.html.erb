@@ -1,4 +1,17 @@
 <h1>user show page</h1>
 
+<p> <%= link_to "dump another shitty idea here", new_idea_path %></p>
+
+
+<ul>
+  <% @user.ideas.each do |idea| %>
+    <li><%= link_to idea.name, idea %>
+      <ul>
+        <li><%= link_to "click here to delete this abomination of a thought", idea, method: :delete %></li>
+        <li><%= link_to "click here to edit this thing that you call an idea...it can't get any worse so go ahead, have at it. hack away", edit_idea_path(idea) %></li>
+      </ul>
+    </li>
+  <% end %>
+</ul>
 
 

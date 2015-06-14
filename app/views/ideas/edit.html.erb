@@ -1,0 +1,9 @@
+<h1>edit this idea</h1>
+
+<%= form_for(@idea) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name%><br>
+  <%= f.label :description%>
+  <%= f.text_area :description%><br>
+  <%= f.submit "click this button to update your idea"%>
+<% end %>
