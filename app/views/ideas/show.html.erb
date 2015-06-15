@@ -7,6 +7,8 @@
 
 <p><%= @idea.user_id %></p>
 
+<p><%=  @idea.category_id ?  Category.find(@idea.category_id).name : "no category selected" %></p>
+
 <p><%= link_to "back to your temple of stupidity", @idea.user %></p>
 
 

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :ideas, only: [:new, :create, :show, :destroy, :edit, :update]
 
   namespace :admin do
-    resources :categories, only: [:index]
+    resources :categories, only: [:index, :new, :show, :destroy, :create, :edit]
   end
 
 
